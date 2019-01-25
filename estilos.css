@@ -1,0 +1,149 @@
+/*Hojas de estilo selecciona los h2 como clases para editarlas*/
+
+/*Seleccion de ID´S*/
+#titulo{
+  color: red;
+}
+/*Seleccion de clases*/
+.rojo{
+  color: blue;
+}
+/*Seleccion de clase y id´s combinadas*/
+#titulo.titulo{
+  font-size: 50px;
+  color: yellow;
+}
+/*Seleccion de 2 clases*/
+/*el orden no tiene imortancia*/
+.azul.tituloCurso{
+  color: brown;
+  font-size: 35px;
+}
+/*Selectores con elementos HTML*/
+h2{
+  color: white;
+  background-color: green;
+  text-transform:uppercase;
+  padding: 20px;
+}
+h3{
+  color: orange;
+}
+p{
+  color: brown;
+  font-size: 25px;
+}
+img{
+  width: 200px;
+}
+/*Selectores con elementos HTML y ID*/
+h2#titulo{
+  color: "orange";
+}
+img#logo{
+  width: 250px;
+}
+/*Seleccion de elementos HTML y clases*/
+section.seccion{
+  background-color: pink;
+}
+div.menu{
+  background-color: gray;
+}
+table.tabla{
+  background-color: orange;
+}
+/*Selector universal*/
+/*{
+  color: blue !important;
+  font-size: 30px!important;
+}*/
+#ventajasCurso *{
+  font-size: 20px;
+  color: purple;
+}
+/*Selecccion de grupos*/
+h2,h3{
+  text-transform: lowercase;
+  text-align: center;
+}
+/*Selector descendiente*/
+nav.navegacion{
+  background-color: orange;
+}
+nav.navegacion ul{
+  list-style: none;
+}
+nav.navegacion ul li{
+  display:inline;
+}
+nav.navegacion ul li a{
+  color: white;
+}
+/*Selector con hijos*/
+ul#ventajasCurso > li{
+  color: blue;
+}
+ul#ventajasCurso ul > li{
+  color: yellow;
+}
+ul#ventajasCurso ol > li{
+  color: black;
+}
+/*Selector con elementos adyacentes*/
+ul#ventajasCurso + p{
+  background-color: cyan;
+  color: red;
+}
+/*Selectores para enlaces*/
+a[href *="facebook.com"]{
+  background-color: orange;
+}
+/*Selectores de atributo*/
+div[class="logo"]{
+  margin-top: 50px;
+}
+section[id="introduccion"]{
+  background-color: orange;
+}
+/*Selectores con Pseudo clases*/
+div.menu nav ul li a:focus,
+div.menu nav ul li a:active,
+div.menu nav ul li a:visited;{
+  color: black;
+}
+div.menu nav ul li:first-child a {
+  text-decoration: none;
+}
+div.menu nav ul li a:hover{
+  color: orange;
+}
+div.menu nav ul li a:hover{
+  background-color: green;
+}
+/*Selectores con Pseudo clases y NTH-child*/
+div.menu nav ul li:nth-child(1){
+  background-color: yellow;
+}
+div.menu nav ul li:nth-child(2){
+  background-color: green;
+}
+div.menu nav ul li:nth-child(3){
+  background-color: orange;
+}
+div.menu nav ul li:nth-child(4){
+  background-color: red;
+}
+/*table.tabla tr:nth-child(odd){
+  background-color: pink;
+}
+table.tabla tr:nth-child(even){
+  background-color: purple;
+}*/
+
+table tbody tr:nth-child(odd){
+  background-color: green;
+}
+table tbody tr:nth-child(even){
+  background-color: green;
+}
